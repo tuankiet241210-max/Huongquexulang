@@ -1,0 +1,8 @@
+{
+  "name": "Hương Quế Xứ Lạng",
+  "description": "Dự án bảo tồn và lan tỏa tinh hoa thảo mộc bản địa Lạng Sơn — Túi thơm quế thủ công, gợi ý mix hương thảo dược và hệ sinh thái sản phẩm từ quế rừng.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

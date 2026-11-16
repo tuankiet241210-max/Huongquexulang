@@ -1,0 +1,735 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="vi" style="width: 1280px; height: 5880px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-tertiary-fixed": "#2d1600",
+        "tertiary-fixed": "#ffdcbf",
+        "on-primary-fixed-variant": "#70361f",
+        "secondary-container": "#c3e8d1",
+        "outline": "#86736d",
+        "surface-container-high": "#f1e6e1",
+        "background": "#fff8f5",
+        "inverse-surface": "#352f2c",
+        "surface-dim": "#e3d8d3",
+        "on-background": "#201b18",
+        "inverse-primary": "#ffb59a",
+        "on-error": "#ffffff",
+        "surface-container": "#f7ece6",
+        "on-primary-fixed": "#370d00",
+        "tertiary": "#552e00",
+        "surface-container-low": "#fdf1ec",
+        "on-secondary-fixed": "#002113",
+        "primary-container": "#7a3e26",
+        "primary-fixed": "#ffdbce",
+        "on-tertiary-container": "#f8b26f",
+        "surface-tint": "#8d4d34",
+        "surface": "#fff8f5",
+        "primary": "#5e2812",
+        "secondary-fixed": "#c6ebd4",
+        "on-secondary": "#ffffff",
+        "on-surface": "#201b18",
+        "tertiary-container": "#744307",
+        "surface-container-lowest": "#ffffff",
+        "on-tertiary": "#ffffff",
+        "error": "#ba1a1a",
+        "on-surface-variant": "#53433e",
+        "on-tertiary-fixed-variant": "#6a3b00",
+        "on-error-container": "#93000a",
+        "on-secondary-container": "#486a57",
+        "tertiary-fixed-dim": "#feb874",
+        "secondary": "#446553",
+        "surface-bright": "#fff8f5",
+        "secondary-fixed-dim": "#aacfb9",
+        "primary-fixed-dim": "#ffb59a",
+        "surface-variant": "#ebe0db",
+        "error-container": "#ffdad6",
+        "on-primary": "#ffffff",
+        "surface-container-highest": "#ebe0db",
+        "on-primary-container": "#ffad8e",
+        "inverse-on-surface": "#faeee9",
+        "outline-variant": "#d8c2ba",
+        "on-secondary-fixed-variant": "#2c4d3c"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "gutter-mobile": "1rem",
+        "margin-mobile": "1.25rem",
+        "space-sm": "0.5rem",
+        "gutter": "1.5rem",
+        "space-xs": "0.25rem",
+        "space-md": "1rem",
+        "margin": "3rem",
+        "space-xl": "2.5rem",
+        "space-lg": "1.5rem"
+      },
+      "fontFamily": {
+        "body-sm": ["Plus Jakarta Sans"],
+        "body-lg": ["Plus Jakarta Sans"],
+        "body-md": ["Plus Jakarta Sans"],
+        "headline-sm": ["Newsreader"],
+        "label-sm": ["Plus Jakarta Sans"],
+        "headline-md": ["Newsreader"],
+        "headline-lg": ["Newsreader"],
+        "headline-lg-mobile": ["Newsreader"],
+        "display": ["Newsreader"],
+        "title-md": ["Plus Jakarta Sans"],
+        "label-md": ["Plus Jakarta Sans"],
+        "title-sm": ["Plus Jakarta Sans"],
+        "display-mobile": ["Newsreader"]
+      },
+      "fontSize": {
+        "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "600"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+        "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+        "headline-lg-mobile": ["26px", {"lineHeight": "34px", "fontWeight": "500"}],
+        "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+        "title-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+        "title-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+        "display-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_16px_36px_-8px_rgba(92,44,22,0.07),0_4px_12px_-2px_rgba(92,44,22,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><a class="flex flex-col text-left" href="#home"><span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">Hương Quế <br>Xứ&nbsp; Lạng</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold"><br></span></a></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-title-sm"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="trang-chu" href="#home">Trang Chủ</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="gioi-thieu" href="#about">Giới Thiệu</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="tui-thom-que" href="#products">Túi Thơm Quế</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="goi-y-mix-huong" href="#mix-recipes">Gợi Ý Mix Hương</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="san-pham-khac" href="#more-products">Sản Phẩm Khác</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="quy-trinh" href="#process">Quy Trình</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="cong-dung" href="#benefits">Công Dụng</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="van-hoa-xu-lang" href="#culture">Văn Hóa Xứ Lạng</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="lien-he" href="#contact">Liên Hệ</a></nav><div class="flex items-center gap-space-sm shrink-0"><a class="sm:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-primary hover:bg-surface-variant transition-colors flex" href="tel:0988000000"><span class="material-symbols-outlined text-title-sm text-secondary">phone_in_talk</span><span class="font-label-sm text-label-sm font-semibold text-primary">0968 614 056</span></a><div class="relative flex items-center pl-space-xs"></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- ==========================================
+       SECTION 1: HERO / TRANG CHỦ (#home)
+  =========================================== -->
+<section class="relative overflow-hidden bg-surface-container-low pt-space-xl pb-space-xl lg:py-space-xl" id="home">
+<!-- Họa tiết dải thổ cẩm mộc mạc phía trên -->
+<div class="w-full h-2 bg-gradient-to-r from-primary-container via-secondary to-primary-container opacity-70 mb-space-lg"></div>
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Cột Nội Dung Hero -->
+<div class="lg:col-span-7 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-title-sm text-secondary">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">100% Nguyên Liệu Bản Địa Lạng Sơn • Tinh Hoa Thảo Mộc Rừng</span>
+</div>
+<div class="space-y-space-xs">
+<p class="font-label-md text-label-md uppercase tracking-widest text-secondary font-semibold">Dự án&nbsp;</p>
+<h1 class="font-display text-display text-primary leading-tight" style="font-size: clamp(3rem, 6vw, 4.5rem); line-height: 1.1;">
+              Hương Quế&nbsp;<div>Xứ Lạng&nbsp;<br></div></h1>
+</div>
+<p class="font-headline-sm text-headline-sm text-tertiary-container italic">
+            “Gửi hương núi rừng vào từng góc nhỏ.”
+          </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Khởi nguồn từ hương quế nồng nàn và nét đẹp thiên nhiên Xứ Lạng, mỗi chiếc túi thơm là sự kết hợp hài hòa giữa quế, hoa hồi cùng các loại thảo mộc. Được làm thủ công từ túi vải, điểm xuyết họa tiết thổ cẩm mang đậm dấu ấn văn hóa vùng cao, sản phẩm gửi gắm hương thơm quê hương đến từng không gian sống.
+          </p>
+<!-- Nút hành động CTA -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all duration-300 shadow-md" href="#products">
+<span class="font-title-sm text-title-sm text-on-primary">Khám Phá Sản Phẩm</span>
+<span class="material-symbols-outlined text-title-sm">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 shadow-md" href="#mix-recipes"><span class="font-title-sm text-title-sm text-on-secondary">Gợi Ý Mix Hương Độc Bản</span><span class="material-symbols-outlined text-title-sm text-on-secondary">auto_fix_high</span></a>
+</div>
+<!-- Thống kê nhanh chân thực -->
+<div class="pt-space-md grid grid-cols-3 gap-space-sm max-w-xl">
+<div class="bg-surface-container-highest p-space-sm rounded-lg text-center">
+<span class="block font-headline-md text-headline-md text-primary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tự Nhiên Bản Địa</span>
+</div>
+<div class="bg-surface-container-highest p-space-sm rounded-lg text-center">
+<span class="block font-headline-md text-headline-md text-secondary font-bold">25-30</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ngày Lưu Hương&nbsp;</span>
+</div>
+
+</div>
+</div>
+<!-- Cột Visual Hero -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto rounded-xl overflow-hidden bg-surface-container p-space-sm shadow-xl">
+<div class="rounded-xl overflow-hidden relative aspect-[4/3] max-w-md mx-auto"><img class="w-full h-full object-cover" data-alt="Artisanal photography of handcrafted cinnamon herbal sachet made from natural rustic linen fabric embroidered with subtle Tay and Nung ethnic patterns. Placed next to organic rolled brown cinnamon barks, dry eight-point star anise, dried orange slices and white jasmine blossoms on a woven bamboo flat tray under warm soft natural morning window light, high resolution earth tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsFifzvC75qxG6xhkXF_qFhy_jOigTNHI8DRh_Cpb_z7n0ABXtHs1u6vssw7nP7lVESRCOcC28VkmY3jaA9hvIE_U2zcLaE1XkBfT1BC7Bz2ObpwTg58JSeLlmQrbTRRKtxMIWZCyZ28U-T-i4DkeL_bE9EnGFWBD2j7tU5M5aXmNU1zqlPFa0QGwHlbfjlB_CGCuaMO3bhlpKmiZcuzQgfRlT8Eu46cPA09aQM6m_MVDSNocq5Csb"><div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div><div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-sm p-space-sm rounded-lg text-on-surface"><div class="flex items-center justify-between"><div><span class="block font-title-sm text-title-sm text-primary">Túi Thơm Hương Quế&nbsp;</span><span class="font-body-sm text-body-sm text-on-surface-variant">May đo thủ công từ vải sợi lanh &amp; thổ cẩm</span></div><span class="p-space-xs rounded-full bg-secondary-container text-on-secondary-container"><span class="material-symbols-outlined text-title-md">spa</span></span></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 2: GIỚI THIỆU THƯƠNG HIỆU (#about)
+  =========================================== -->
+<section class="py-space-xl bg-surface" id="about">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-xl space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold"></span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Câu Chuyện Hương Quế Xứ Lạng</h2>
+<p class="font-headline-sm text-headline-sm italic text-on-surface-variant">
+          “Hành trình mang hương thơm di sản từ núi rừng vào không gian sống"</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Khung ảnh câu chuyện làng nghề -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="relative rounded-xl overflow-hidden shadow-md bg-surface-container h-full flex flex-col justify-between"><div class="aspect-[4/3] w-full overflow-hidden"><img class="w-full h-full object-cover" data-alt="Documentary style photo of local Tay and Nung highland farmers harvesting wild cinnamon tree bark in the mountainous forest of Lang Son, drying fragrant aromatic cinnamon sticks and star anise under golden mountain sunlight, vibrant organic textures, authentic Vietnamese highland heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqDr0SvH-EQ86Q2SGBFt6O0Ic1IgeXO7dZhhBkvPy3s2qHcQdKoxBGDbnRxmna3QaWNqyfbpXa_ZQhWJduVMsgh3LgOSRBP44rTdXAqu3Bh0N5P07VHlap8DxSaIylU-Lafq2My6Pt3Bt6JLK0Q7nLNZErKXhgOLhGakbhAwmNyBaIPrDBqlpNA7PvDd1ABFnVPb_T0W2ardNVEWyLyPBsTCeSNnz6DoXCaj2L4r0CM2sv9v6GhT8p"></div><div class="p-space-md bg-surface-container-high text-center"><span class="font-title-sm text-title-sm text-primary">Rừng quế Lạng Sơn</span></div></div>
+</div>
+<!-- 4 Trụ cột giá trị cốt lõi -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-title-md">eco</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">100% Nguyên Liệu Bản Địa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Nguyên liệu được chọn lọc tỉ mỉ từ những cây quế già và rừng hoa hồi tự nhiên tại Bình Gia, Lạng Sơn vùng đất cho thảo mộc chất lượng, thơm nồng và đậm đà hương vị núi rừng.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-title-md">self_improvement</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">Hương Trị Liệu Thuần Khiết</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Mỗi công thức là sự hòa quyện giữa vỏ quế nồng ấm, hoa hồi thơm dịu và thảo mộc núi rừng, mang đến hương thơm tự nhiên giúp tinh thần thư thái, nhẹ nhàng xua đi những căng thẳng đời thường.
+            </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-title-md">local_florist</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">Quảng Bá Nông Sản Quê Nhà</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Nâng niu sản vật Xứ Lạng thành sản phẩm thủ công tinh xảo, văn minh, mang hương quê đi xa và tạo sinh kế bền vững cho đồng bào dân tộc thiểu số.
+            </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-title-md">diversity_1</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">Lan Tỏa Bản Sắc Quê Hương</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Mỗi đường chỉ thổ cẩm Tày - Nùng trên túi là câu chuyện về đôi bàn tay khéo léo, tấm lòng mộc mạc và sự chân tình của con người nông thôn miền&nbsp; Bắc.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 3: SẢN PHẨM CHÍNH (#products)
+  =========================================== -->
+<section class="py-space-xl bg-surface-container-low" id="products">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold"></span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Bộ Sưu Tập Túi Thơm Hương Quế&nbsp;</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Từng chiếc túi thơm được khâu may tỉ mỉ từ vải, ruột túi chứa trọn vẹn thảo mộc theo phương pháp giữ hương lâu bền.
+        </p>
+</div>
+<!-- Lưới 4 sản phẩm chính -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Sản phẩm 1 -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Handmade natural linen aroma sachet filled with traditional pure Lang Son cinnamon chips, warm cinnamon bark beside it on rustic wood, artisan crafted with ethnic pattern embroidery tag, studio lighting, organic lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHXPJVnwaRVBQEWM9DNMkCEiAWXWk8XpHf_sAX0qNN1iiGH2qHzbrxZEPr9a2oKJwkd0FEwE07FmEWU3VxWCrb5PQmDzlpRlDu1P9I091LTfn3Ojc_k-D7iiq-LLI_wcQhqwc3Q46dNzUfKWoo_SavxHZUtat6Kb8qERrdD7tJ5pI9TwMa4wLd72wu9sRQCozENcq-n6ICdtsitbXlMsM6XixqwPpdPKHPJP5oDGdV7O_rT8MKi8GtXw"><span class="absolute top-3 left-3 px-space-xs py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">Nguyên Bản</span></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-medium uppercase">Vỏ quế 100%</span>
+<h3 class="font-title-md text-title-md text-primary">Túi Thơm Quế Truyền Thống</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hương thơm nồng ấm, ngọt cay đậm đà giúp làm thơm phòng,xe hơi,.., khử mùi hôi ẩm mốc và mang lại cảm giác bình an.</p>
+<div class="pt-space-xs text-xs text-on-surface-variant space-y-1">
+
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between mt-auto">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Gía thành : 25.000đ</span>
+
+</div>
+</div>
+<!-- Sản phẩm 2 -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal fragrant cloth sachet with high-grade cinnamon and dry star anise flowers from Lang Son mountainous region, soft linen texture with deep green stitching on beige stone background, minimalist elegant lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfFsvDerN7-ns2uL0hK-BnCVu6ZQ3trYAJ1qgAR0je3yqV1m4z1L_0tWPf1PUjcQwbMvoIW35xDnqCwIPOWtvzLJbaWfgU4j4YFR0386scxUBEn3_2BQrvXmkolXRxhkKpyxRdKooNzC7sgibjYEclTt8m1iU8R8G1wNb2zUTNRS4xOD9eYv-4WE5loUw-BAcVkIBfUI0eKW6LTuKH4SA-_2bEhRxW6fOLje7ARvp0Zm9w5ON5oNYqSA"><span class="absolute top-3 left-3 px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm">Bán Chạy&nbsp;</span></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-medium uppercase"><span style="letter-spacing: 0.48px;">&nbsp;thanh&nbsp;</span>Quế &amp; Hoa hồi xứ Lạng</span>
+<h3 class="font-title-md text-title-md text-primary">Túi Thơm Quế Hồi&nbsp;</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hương thơm trầm ấm, quyến rũ đặc trưng của quế, khử mùi phòng, xe hơi xuất sắc.</p>
+<div class="pt-space-xs text-xs text-on-surface-variant space-y-1">
+
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between mt-auto">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Gía thành : 25.000đ</span>
+
+</div>
+</div>
+<!-- Sản phẩm 3 -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Handcrafted sachet bag placed alongside dehydrated citrus orange slices, lemongrass curls and cinnamon stick pieces, earthy organic craft concept, natural daylight, warm aesthetic tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3DWvkMMcaEBRKcZZ8phEaJ_dWZrfZ5GKb4q-eS10kblcVE03Asw50TBGz9bJ03PJCM6F5SlqBpXk4TnMYHgo-iOh1zCny7ko2CEvc_Qcc-RW1pK1YOf6J7ibc6YAcUaJ7GkvKV1wjc68003FDHw8k29qnV77t-csZzIltO7uUzTGKGXM1zI-NNBpl3puTdLMJBmFKF1BwNb0eZhpA2-Ave1UPbJXxjwR6KmR-Z3uagvr9cJX04YhRbg"><span class="absolute top-3 left-3 px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-sm text-label-sm">Tươi Mát</span></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-medium uppercase">Quế,hồi, vỏ quýt sấy&amp; vỏ bưởi</span>
+<h3 class="font-title-md text-title-md text-primary">Túi Thơm Quế Cam Sảng Khoái</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mùi hương sảng khoái mát lành hòa quyện vị ngọt ấm của quế, xua tan uể oải.</p>
+<div class="pt-space-xs text-xs text-on-surface-variant space-y-1">
+
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between mt-auto">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Gía thành : 25.000đ</span>
+
+</div>
+</div>
+<!-- Sản phẩm 4 -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal herbal scented pouch featuring dried white jasmine flowers, local perilla mint leaves, and cinnamon chips in rustic handmade fabric with woven cord, serene Zen aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8jf6jnEsBlx1vWRDAJgBeVf2q_VIJZI636d5yvtzzeO4D1MnoV-nY675XkFFu8qmLxkyMWNyTCme5OL2SJGX3Ykj_2j3GHOtxI-P9SEFp7b-OxO5dIsfq4ahAU3eWjZ4jwYijB7INcabhFqPUQwGTOuae1oe2vF9rE4wS89kXK8u80mDjP7PYIQqZg42IBNmsax7a-bqCOe8fRabzON6w_qsk2hnb4MwHu2Qd7j8OGD9kvTw64M1Cgw"><span class="absolute top-3 left-3 px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Thư Giãn</span></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-medium uppercase">Quế, Hoa nhài &amp; Tía tô&nbsp;</span>
+<h3 class="font-title-md text-title-md text-primary">Túi Quế Thảo Dược Thư Thái</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hương thơm tao nhã, êm ái xua tan âu lo, hỗ trợ giấc ngủ ngon sâu và ướp hương thanh dịu cho tủ quần áo hay bàn trà.</p>
+<div class="pt-space-xs text-xs text-on-surface-variant space-y-1">
+
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between mt-auto">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Gía thành : 25.000đ</span>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 4: GỢI Ý MIX HƯƠNG (#mix-recipes)
+       TRỌNG TÂM ĐẶC BIỆT & SÁNG TẠO MÙI HƯƠNG
+  =========================================== -->
+<section class="py-space-xl bg-surface" id="mix-recipes">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<!-- Tiêu đề phần trọng tâm -->
+<div class="text-center max-w-3xl mx-auto mb-space-lg space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-title-sm text-primary">blender</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">HƯƠNG QUẾ XỨ LẠNG</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          Gợi Ý Mix Hương – Sáng Tạo Phong Cách Hương Bản Địa
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Sự kết hợp kỳ diệu giữa <span class="font-semibold text-primary">Quế Xứ Lạng</span> cùng các nguyên liệu thảo mộc địa phương:<span class="italic">Hoa hồi, Sả, Vỏ bưởi, Vỏ cam, Vỏ quýt, Hoa nhài, Kinh giới, Tía tô,..</span>. 
+          Khám phá 7 loại mùi hương thuần tự nhiên, không hóa chất:
+        </p>
+</div>
+<!-- Trưng bày 9 nguyên liệu dạng Pills mộc mạc -->
+<div class="mb-space-xl p-space-md rounded-xl bg-surface-container-high shadow-sm">
+<span class="block text-center font-label-md text-label-md font-semibold text-primary mb-space-sm uppercase tracking-wider">các loại Thảo Dược Thiên Nhiên Dùng Trong Công Thức
+        </span>
+<div class="flex flex-wrap items-center justify-center gap-space-xs">
+<span class="px-space-md py-space-xs rounded-full bg-surface text-primary font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"><br></span>Thanh Quế&nbsp;</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface text-secondary font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Hoa Hồi
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface text-on-surface font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Sả Tươi Sấy
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface text-on-surface font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span> Vỏ Bưởi Sao
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface text-on-surface font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span> Vỏ Cam Sấy Lạnh
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface text-on-surface font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span> Vỏ Quýt Mộc
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface text-on-surface font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span> Hoa Nhài Rừng
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface text-on-surface font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Kinh Giới
+          </span>
+<span class="px-space-md py-space-xs rounded-full bg-surface text-on-surface font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Tía Tô&nbsp;</span>
+</div>
+</div>
+<!-- Bảng 7 công thức phối hợp gắn kết liền mạch -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Recipe 1 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">Công Thức 01</span>
+<span class="material-symbols-outlined text-primary text-title-md">fireplace</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Quế Hồi Ấm Áp</h3>
+<div class="flex items-center gap-1 flex-wrap pt-1">
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-primary">[Quế]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-secondary">[Hoa Hồi]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs"><span style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder;">Đặc Điểm:</span>Ấm áp sâu lắng, gợi hoài niệm bếp lửa vùng cao, xua tan gió buốt mùa đông và mang lại phúc khí cát tường cho gia chủ.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm border-t-0 bg-surface-container-high/60 p-space-xs rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-xs text-on-surface-variant font-medium">Lý tưởng: Phòng khách, bàn thờ gia tiên, ngày đông,..</span>
+</div>
+</div>
+<!-- Recipe 2 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-sm text-label-sm">Công Thức 02</span>
+<span class="material-symbols-outlined text-tertiary-container text-title-md">wb_sunny</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Quế Cam Tươi Mát</h3>
+<div class="flex items-center gap-1 flex-wrap pt-1">
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-primary">[Quế]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-tertiary-container">[Vỏ Cam]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-secondary">[Sả]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs"><span style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder;">Đặc Điểm:</span>Tươi sáng bừng tỉnh, ngập tràn năng lượng tích cực, kích hoạt sự tập trung cao độ và khơi nguồn sáng tạo dạt dào.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm bg-surface-container-high/60 p-space-xs rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-xs text-on-surface-variant font-medium">Lý tưởng: Bàn làm việc, góc học tập, xe hơi,...</span>
+</div>
+</div>
+<!-- Recipe 3 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm">Công Thức 03</span>
+<span class="material-symbols-outlined text-secondary text-title-md">air</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Quế Bưởi Thanh Khiết</h3>
+<div class="flex items-center gap-1 flex-wrap pt-1">
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-primary">[Quế]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-secondary">[Vỏ Bưởi]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+<span style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder;">Đặc Điểm:</span>Thanh tao, the mát dịu êm, giúp giải tỏa uể oải nặng nề và khử triệt để mùi hôi khó chịu hay ẩm ướt trong nhà.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm bg-surface-container-high/60 p-space-xs rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-xs text-on-surface-variant font-medium">Lý tưởng: Không gian bếp, phòng tắm, tủ giày,...</span>
+</div>
+</div>
+<!-- Recipe 4 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Công Thức 04</span>
+<span class="material-symbols-outlined text-primary text-title-md">favorite</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Quế Quýt Dịu Ngọt</h3>
+<div class="flex items-center gap-1 flex-wrap pt-1">
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-primary">[Quế]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-tertiary">[Vỏ Quýt]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-secondary">[Hoa Nhài]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+<strong>Đặc Điểm:</strong> Ngọt ngào thanh nhã, đưa tâm hồn chìm vào sự an yên vỗ về, chữa lành những xao động sau ngày dài hối hả.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm bg-surface-container-high/60 p-space-xs rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-xs text-on-surface-variant font-medium">Lý tưởng: Góc đọc sách, phòng đọc thiền, tủ đồ ngủ,...</span>
+</div>
+</div>
+<!-- Recipe 5 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Công Thức 05</span>
+<span class="material-symbols-outlined text-secondary text-title-md">yard</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Hương Thảo Mộc Xứ Lạng</h3>
+<div class="flex items-center gap-1 flex-wrap pt-1">
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-primary">[Quế]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-secondary">[Kinh Giới]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-primary-container">[Tía Tô]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs"><span style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder;">Đặc Điểm:</span>&nbsp;Mang phong vị vườn nhà mộc mạc, hỗ trợ thông thoáng khoang mũi, làm dịu hô hấp, thơm ấm thân thương như vòng tay mẹ.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm bg-surface-container-high/60 p-space-xs rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-xs text-on-surface-variant font-medium">Lý tưởng: Phòng ngủ người lớn tuổi, chăm sóc sức khỏe,...</span>
+</div>
+</div>
+<!-- Recipe 6 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-surface-dim text-on-surface font-label-sm text-label-sm">Công Thức 06</span>
+<span class="material-symbols-outlined text-primary text-title-md">filter_vintage</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Hương Hoa Dịu Nhẹ</h3>
+<div class="flex items-center gap-1 flex-wrap pt-1">
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-primary">[Quế]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-secondary">[Hoa Nhài]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs"><span style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder;">Đặc Điểm:</span>&nbsp;Tinh khôi, quý phái, nâng niu giấc ngủ thanh tịnh và mang lại nét mềm mại duyên dáng cho bàn trang điểm hay góc trà.
+            </p>
+</div>
+<div class="pt-space-md mt-space-sm bg-surface-container-high/60 p-space-xs rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-xs text-on-surface-variant font-medium">Lý tưởng: Giường ngủ, gối nằm, góc thư giãn spa,...</span>
+</div>
+</div>
+<!-- Recipe 7: Card rộng nổi bật bản sắc -->
+<div class="md:col-span-2 lg:col-span-3 bg-surface-container-highest p-space-md rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm">Công Thức 07&nbsp;</span>
+
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Quế Sả Thiên Nhiên</h3>
+<div class="flex items-center gap-1 flex-wrap pt-1">
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-primary">[Quế ]</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-secondary">[Sả&nbsp;</span>
+<span class="text-outline">+</span>
+<span class="px-2 py-0.5 rounded bg-surface font-label-sm text-label-sm font-semibold text-secondary">[Hoa Hồi]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Khắc tinh tự nhiên của muỗi và côn trùng, thanh lọc không khí ẩm thấp trên ô tô, làm trong lành góc phòng làm việc suốt ngày dài.
+            </p>
+</div>
+<div class="shrink-0">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 5: CÁC SẢN PHẨM KHÁC TỪ QUẾ (#more-products)
+  =========================================== -->
+<section class="py-space-xl bg-surface-container-low" id="more-products">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-lg space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold"></span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Hệ Sinh Thái Sản Phẩm Hương Quế Xứ Lạng</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Từ thân vỏ quế ngút ngàn, các nghệ nhân chưng cất và gia công tỉ mỉ để tạo nên chuỗi sản phẩm mộc mạc, chuẩn mực thiên nhiên.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"><div class="group bg-surface rounded-xl border border-outline-variant/30 hover:border-outline-variant shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden p-5"><div class="space-y-4"><div class="aspect-[4/3] rounded-xl overflow-hidden relative bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Amber glass essential oil dropper bottle of pure Lang Son cinnamon oil with natural wood elements, cinnamon bark on side, clean apothecary presentation, artisanal organic aromatherapy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM29Gi9r_nEN9Hm72dcOFyXAnaz0XgSjhL8r-FvMWj4-7LHBpnSVN2F4BCNLQLGlOwHC0BFa8OMqLpltl6gzyuN4s9JEBrg4CTn7ROvwPiaJkaeBS8nqOsdJZbKGOODtbjyhsncOuSFqlIEGMMomMkh3oLhQdiy1WW2BilmJLwKNZl9xQyB--OdLwW_RcKBlNLeBwoslsC9NdAC1z4B9-cErF6bqaFRF5g8CiwN4J1t2Q2p3LqQn3n"><span class="absolute top-3 left-3 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm font-semibold shadow-sm">Tinh dầu quế</span></div><div class="space-y-1.5"><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider block">Tinh dầu đậm đặc</span><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Tinh Dầu Quế Nguyên Chất</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-3">Chưng cất từ vỏ quế đồi già, dung tích 100ml, độ đậm đặc cao dùng xông phòng thư giãn, massage trị liệu và xua đuổi côn trùng hiệu quả.</p></div></div><div class="pt-4 mt-4 border-t border-outline-variant/40 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">Giá bán lẻ</span><span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">55.000đ <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ 100ml</span></span></div></div></div><div class="group bg-surface rounded-xl border border-outline-variant/30 hover:border-outline-variant shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden p-5"><div class="space-y-4"><div class="aspect-[4/3] rounded-xl overflow-hidden relative bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Premium dried rolled cinnamon sticks tightly bundled with rough jute twine, rustic organic cinnamon barks from Lang Son mountain forest on weathered linen cloth, earthy natural vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFM5496Uvs_6FGpQEn-l0L_axLF2bQ_PFPodlT2TV9bO88jfq-5f_BqWBrai74DZJzsAlPvkXONh6cdX9K0LTXOQCeEuF8ssLxPQwByRNOvbgzcK2ApYGebjALQhCaY2fX-qLHuogUZIJPtlTa0rG40Pm9edpp6DBaJO1b4tv520o3y4237EzJ-OLPWc_2OyBLE0H_upzOhchscomjCEByg6E_LqrN1cj9h836mr_Pb_YfrPzRimIU"><span class="absolute top-3 left-3 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm font-semibold shadow-sm">Thanh quế khô</span></div><div class="space-y-1.5"><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider block">Dược liệu bản địa</span><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Thanh Quế Khô</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-3">Những ống quế cuộn tròn tự nhiên dày dặn, hàm lượng tinh dầu cao, dùng decor nghệ thuật, pha trà quế mật ong hoặc ngâm rượu thảo mộc dưỡng sinh.</p></div></div><div class="pt-4 mt-4 border-t border-outline-variant/40 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">Giá bán lẻ</span><span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">35.000đ <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ 100g</span></span></div></div></div><div class="group bg-surface rounded-xl border border-outline-variant/30 hover:border-outline-variant shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden p-5"><div class="space-y-4"><div class="aspect-[4/3] rounded-xl overflow-hidden relative bg-surface-container"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Finely milled natural cinnamon powder in ceramic bowl with wooden spoon, sprinkled cinnamon dust on rustic linen texture, golden hour soft lighting, organic artisan baking spices." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiF43dKkCWDBk0N27V6yp_XYYF7519eM2NjRG497TOq7BG8fHDOq7u5BWULznP4FyRKpXCuAASUTQkx-5UiTTOH18poBU-P86urCGsX_yBbP7Xx1LL7dOsFt-r0LzpCDKdwlqx3ezcQCjFkHgqTzJFlwkl0k_jIv0g1IKLl64FVTgiMUC8xs2Z2jKJ0PBkIQN03LekLVXg2MjZZkM1KY6pnISoTY9hKwNeW5ZgttVmW9YjJqTVNZUw"><span class="absolute top-3 left-3 px-space-xs py-0.5 rounded bg-surface/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm font-semibold shadow-sm">Bột quế</span></div><div class="space-y-1.5"><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider block">Xay mịn nguyên chất</span><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Bột Quế Mịn Nguyên Chất</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-3">Xay mịn từ vỏ quế cạo sạch lớp biểu bì, thơm lừng ngọt cay, thích hợp làm gia vị ẩm thực, làm bánh, pha đồ uống,...</p></div></div><div class="pt-4 mt-4 border-t border-outline-variant/40 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">Giá bán lẻ</span><span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">30.000đ <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ 100g</span></span></div></div></div></div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 6: NGUYÊN LIỆU & QUY TRÌNH (#process)
+  =========================================== -->
+<section class="py-space-xl bg-surface" id="process">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-lg space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold"></span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Quy Trình Tạo Nên Túi Thơm&nbsp;</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          5 bước khép kín từ nương rừng đến bàn tay khách hàng, gìn giữ trọn vẹn dược tính tự nhiên và hương thơm Xứ Lạng.
+        </p>
+</div>
+<!-- 5 bước quy trình sản xuất -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm relative">
+<!-- Bước 1 -->
+<div class="bg-surface-container p-space-md rounded-xl space-y-space-xs flex flex-col justify-between">
+<div class="space-y-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold opacity-40">01</span>
+<h3 class="font-title-sm text-title-sm text-primary">Chuẩn Bị Quế &amp; Thảo Mộc</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Thu hoạch vỏ cây quế đúng độ tuổi, lựa hoa hồi 8 cánh đều đặn tại các cánh rừng Lạng Sơn và các nguyên liệu khác.</p>
+</div>
+<div class="pt-space-xs">
+<span class="material-symbols-outlined text-secondary text-title-md">forest</span>
+</div>
+</div>
+<!-- Bước 2 -->
+<div class="bg-surface-container p-space-md rounded-xl space-y-space-xs flex flex-col justify-between">
+<div class="space-y-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold opacity-40">02</span>
+<h3 class="font-title-sm text-title-sm text-primary">Làm Sạch &amp; Sơ Chế</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Làm sạch bằng nước, phơi sấy mộc tự nhiên để giữ nguyên tinh chất dầu thơm quý giá.</p>
+</div>
+<div class="pt-space-xs">
+<span class="material-symbols-outlined text-secondary text-title-md">water_drop</span>
+</div>
+</div>
+<!-- Bước 3 -->
+<div class="bg-surface-container p-space-md rounded-xl space-y-space-xs flex flex-col justify-between">
+<div class="space-y-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold opacity-40">03</span>
+<h3 class="font-title-sm text-title-sm text-primary">Phối Trộn Thảo Mộc</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Phối trộn theo tỷ lệ</p>
+</div>
+<div class="pt-space-xs">
+<span class="material-symbols-outlined text-secondary text-title-md">tune</span>
+</div>
+</div>
+<!-- Bước 4 -->
+<div class="bg-surface-container p-space-md rounded-xl space-y-space-xs flex flex-col justify-between">
+<div class="space-y-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold opacity-40">04</span>
+<h3 class="font-title-sm text-title-sm text-primary">Đóng Túi&nbsp;</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cho thảo mộc vào túi được dệt thoáng khí, đính kèm dây rút hoa văn thổ cẩm may tay công phu.</p>
+</div>
+<div class="pt-space-xs">
+<span class="material-symbols-outlined text-secondary text-title-md">shopping_bag</span>
+</div>
+</div>
+<!-- Bước 5 -->
+<div class="bg-surface-container p-space-md rounded-xl space-y-space-xs flex flex-col justify-between">
+<div class="space-y-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold opacity-40">05</span>
+<h3 class="font-title-sm text-title-sm text-primary">Hoàn Thiện&nbsp;</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kiểm định chất lượng kỹ càng từng sản phẩm, đóng hộp và gửi trao đến khách hàng</p>
+</div>
+<div class="pt-space-xs">
+<span class="material-symbols-outlined text-secondary text-title-md">local_shipping</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 7: CÔNG DỤNG ĐA NĂNG (#benefits)
+  =========================================== -->
+<section class="py-space-xl bg-surface-container-low" id="benefits">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-lg space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold"></span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Công Dụng Tuyệt Vời Trong Không Gian Sống</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Không chỉ là vật phẩm thơm hương, túi quế Lạng Sơn còn là giải pháp sống xanh, bảo vệ không gian sống tự nhiên và an lành cho gia đình bạn.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<div class="bg-surface p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow text-center space-y-space-xs">
+<div class="w-12 h-12 mx-auto rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">home</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">Tạo Hương Không Gian</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Khử mùi hôi ẩm mốc, xua tan mùi thức ăn,giúp tinh thần thư thái và lan tỏa hương thơm ấm cúng khắp căn phòng.</p>
+</div>
+<div class="bg-surface p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow text-center space-y-space-xs">
+<div class="w-12 h-12 mx-auto rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">chair</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">Trang Trí Phòng Khách</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Họa tiết thổ cẩm mộc mạc trở thành điểm nhấn thẩm mỹ tao nhã cho bàn trà và góc kệ.</p>
+</div>
+<div class="bg-surface p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow text-center space-y-space-xs">
+<div class="w-12 h-12 mx-auto rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">checkroom</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">Thơm Tủ Áo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hương quế lưu hương trên từng thớ vải tơ lụa, chống nấm mốc và xua đuổi côn trùng tự nhiên.</p>
+</div>
+<div class="bg-surface p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow text-center space-y-space-xs">
+<div class="w-12 h-12 mx-auto rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">directions_car</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">Khử Mùi Ô Tô</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Đánh bay hoàn toàn cảm giác say xe ngột ngạt, tạo luồng không khí trong lành, sảng khoái trong xe.</p>
+</div>
+<div class="bg-surface p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow text-center space-y-space-xs">
+<div class="w-12 h-12 mx-auto rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-title-md">card_giftcard</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-primary">Quà Tặng Ý Nghĩa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Món quà tinh tế đậm chất văn hóa bản địa dành tặng bạn bè phương xa, đối tác và người thương yêu.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 8: GÓC VĂN HÓA XỨ LẠNG (#culture)
+  =========================================== -->
+<section class="py-space-xl bg-surface" id="culture">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-6 space-y-space-md">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">GÓC VĂN HÓA</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Vẻ Đẹp Con Người &amp; Văn Hóa Xứ Lạng</h2>
+<div class="p-space-md rounded-xl bg-surface-container-low border-l-4 border-primary space-y-space-xs">
+<p class="font-headline-sm text-headline-sm italic text-primary leading-relaxed">
+              “Mỗi thanh quế, bông hồi là giọt mồ hôi của đồng bào trên những sườn đồi xanh thẳm, mang lại sinh kế bền vững và niềm tự hào xứ Lạng.”
+            </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Xứ Lạng không chỉ có mây phủ Mẫu Sơn hay ải Chi Lăng hào hùng, mà còn say đắm lòng người bởi những nương đồi quế bạt ngàn và sắc chàm đằm thắm của người Tày-Nùng. Mỗi chiếc túi thơm là một câu chuyện được kể bằng hương quế của vùng đất Xứ Lạng</p>
+<div class="flex items-center gap-space-md">
+
+<div class="flex items-center gap-space-xs text-primary font-title-sm text-title-sm">
+
+<span><br></span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 grid grid-cols-2 gap-space-sm items-center"><div class="rounded-xl overflow-hidden shadow-md aspect-[4/3] bg-surface-container"><img class="w-full h-full object-cover" data-alt="Stunning scenic mountain landscape of Lang Son Vietnam misty hills covered with cinnamon trees, terraced slopes, early sunrise mountain ridges, atmospheric soft morning glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfm4dznZo9nluKSL7ozsnzJEW97txnD4TdIPyMTTwUUSyymHLwnX52GKJcsIg2OSgyyANuz1qfJLRrG0AkGBzxGp_VP2mn6MQKkDQm2OWvlO0m310zpkgXtE33RfgcStXZLVd5k3csNLD7AnVbpqNS_Q_R9FQKA5kybttz8vqMB6S_HjQj-O1uRsq7wFJ-8NrNlVidU8UqZfwPRwd21sAkME9PDo2K5Tsq4s2BdzRi_q5dUI7KERXQ9A"></div><div class="rounded-xl overflow-hidden shadow-md aspect-[4/3] bg-surface-container"><img class="w-full h-full object-cover" data-alt="Close up photography of Tay and Nung ethnic traditional woven indigo textile with vibrant geometric pattern embroidery threads, rich artisan craft texture, northern Vietnam cultural heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc6wWWmswygDEN93ul4VVfOZf1zMFfGH7HSEv10v0sfc_kum0L5QVlbzWAfIIcofejf4cTlLPrJIg88Ybr_XjOVbeDFKwjCrm7-5DIFjOBltkWur2IsG5tSE6XE0AIBNyzhue1jsT3bRLYpyKxtJrt4nY3deoqjhiRCG_fIp13BtPcQFF-R_zzdzhGIu6GNA5HRDOPoCMaMb34zouFWUIjapmUHpoxltXllGZ7ctmejLYQyk3nfWdA"></div></div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 9: THÔNG TIN LIÊN HỆ & DỰ ÁN (#contact)
+  =========================================== -->
+<section class="py-space-xl bg-surface-container" id="contact">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-lg space-y-space-xs">
+
+<h2 class="font-headline-lg text-headline-lg text-primary">Dự Án Hương Quế Xứ Lạng</h2>
+<p class="font-headline-md text-headline-md italic text-tertiary-container leading-relaxed"><span style="text-align: start;">“Hương quế lan tỏa - bản sắc vươn xa”</span></p>
+</div>
+<div class="max-w-3xl mx-auto mt-space-md"><div class="p-space-md rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center gap-space-sm shadow-sm text-center"><span class="material-symbols-outlined text-headline-md text-secondary shrink-0">verified</span><p class="font-title-sm text-title-sm text-on-secondary-container leading-relaxed">Cam kết 100% thảo mộc tự nhiên Lạng Sơn, không sử dụng chất tạo hương nhân tạo, bảo tồn môi trường sinh thái vùng cao.</p></div></div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Hương Quế Xứ Lạng Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaf9vqYlodGPzhsxasVaGM99ECaV_OVgQHAJm_SEjCo9EgoHk18AA9tCm3QtUijeU-6KWHVNRMxv3Cf0DjzLOLN5g0vsizlNJa_lFKFYzu3AV4_CPax-MZoGt-Uuk7dtw9fYF2k6lvzARYtHFPv9-N3tZPFsB_gJHnHMEdtoO0K8C-O-AXycv7IZqYD4rDJmOsqcc2lN0VqGqGeg4sa1dH1bM0LHM5umdQGO_qZ6SO"><span class="font-headline-sm text-headline-sm text-primary">Hương Quế Xứ Lạng</span></div><p class="font-headline-sm text-headline-sm italic text-tertiary-container leading-relaxed">“Hương quế lan tỏa - bản sắc vươn xa”</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Dự án bảo tồn và lan tỏa giá trị thảo dược bản địa Lạng Sơn. Túi thơm quế tự nhiên chế tác thủ công từ quế rừng, hoa hồi, kết hợp thêu thổ cẩm truyền thống Tày - Nùng vùng biên.</p></div><div class="space-y-space-md"><h3 class="font-title-sm text-title-sm uppercase tracking-wider text-primary">Liên Kết Nhanh</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#about"><span class="material-symbols-outlined text-sm text-secondary">chevron_right</span> Về Chúng Tôi</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#products"><span class="material-symbols-outlined text-sm text-secondary">chevron_right</span> Bộ Sưu Tập Túi Thơm</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#mix-recipes"><span class="material-symbols-outlined text-sm text-secondary">chevron_right</span> Gợi Ý Mix Hương</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#more-products"><span class="material-symbols-outlined text-sm text-secondary">chevron_right</span> Hệ Sinh Thái Sản Phẩm</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#process"><span class="material-symbols-outlined text-sm text-secondary">chevron_right</span> Quy Trình Thủ Công</a></li><li><a class="hover:text-primary transition-colors flex items-center gap-1" href="#culture"><span class="material-symbols-outlined text-sm text-secondary">chevron_right</span> Nét Đẹp Xứ Lạng</a></li></ul></div><div class="space-y-space-md"><h3 class="font-title-sm text-title-sm uppercase tracking-wider text-primary">Thông Tin Liên Hệ</h3><div class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-title-sm text-secondary shrink-0">location_on</span><span>Xã Bình Gia, Tỉnh Lạng Sơn</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-title-sm text-secondary shrink-0">call</span><span>Hotline: 0968.xxx.xxx</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-title-sm text-secondary shrink-0">mail</span><span>tuankiet241210@gmail.com</span></div><div class="flex items-center gap-space-xs"></div></div></div><div class="space-y-space-md"><h3 class="font-title-sm text-title-sm uppercase tracking-wider text-primary">Dự Án Khởi Nghiệp</h3><div class="p-space-md rounded-xl bg-surface-container space-y-space-xs shadow-sm"><div class="flex items-center gap-space-xs text-primary font-semibold text-title-sm"><span class="material-symbols-outlined text-title-md text-secondary">school</span><span>Dự án Khởi nghiệp Xanh</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Dự án tham gia Cuộc thi Học sinh, Sinh viên với Ý tưởng Khởi nghiệp.</p></div><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-title-sm text-secondary shrink-0">verified</span><span>Cam kết 100% thảo mộc rừng xanh tự nhiên.</span></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-title-sm text-secondary shrink-0">loyalty</span><span>Bảo tồn hoa văn thổ cẩm và nét đẹp bản địa.</span></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-title-sm text-secondary shrink-0">volunteer_activism</span><span>Tạo sinh kế bền vững cho đồng bào vùng cao.</span></div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2026Hương Quế Xứ Lạng. Toàn bộ bản quyền được bảo lưu. Dự án phát triển bền vững thảo mộc vùng cao.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-primary transition-colors" href="#">Chính sách chất lượng</a><a class="hover:text-primary transition-colors" href="#">Bảo mật thông tin</a></div></div></div></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
